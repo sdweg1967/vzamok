@@ -1583,7 +1583,44 @@ section {
         height: 180px;
     }
 }
+/* Принудительное отображение FontAwesome иконок */
+.fas, .far, .fab {
+    font-family: 'Font Awesome 6 Free' !important;
+    font-weight: 900;
+}
 
+.fab {
+    font-family: 'Font Awesome 6 Brands' !important;
+}
+
+/* Убедитесь, что иконки не отображаются как эмодзи */
+.hero-highlight i,
+.btn i,
+.nav-link i,
+.feature-icon i,
+.menu-category i,
+.pricing-card i,
+.calculator-container i,
+.event-icon i,
+.contact-icon i,
+.benefit-icon i,
+.card-stats i,
+.modal-header i {
+    font-style: normal !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Специально для hero-секции */
+.hero-highlight .fa-star {
+    color: #FFD700 !important;
+}
+
+.hero-actions .fa-ticket-alt,
+.hero-actions .fa-key {
+    font-size: 1.1em;
+}
 @media (min-width: 481px) and (max-width: 767px) {
     .container {
         padding: 0 20px;
